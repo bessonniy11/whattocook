@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Что приготовить?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/eye.png" type="image/x-icon">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="scene">
+        <div dataspeed="190" class="layer layerbg"></div>
+        <img dataspeed="190" class="layer img animate__animated" id="img" src="">
+        <div dataspeed="190" class="layer skills" id="skills"></div>
+    </div>
+    <div class="fonAdd" id="fonAdd"></div>
+    <div class="navlink animate__animated" id="navlink">
+        <h4>Что мы вообще умеем готовить?</h4>
+        <button class="add" id="add">+</button>
+        <div class="textnav" id="textnav"></div>
+    </div>
+
+
+    <div class="content" id="content">
+        <button onclick="Fresh()" class="button" id="myBtn" >Сегодня мы готовим...</button>
+        <div class="specialtyes">
+            <input class="input animate__animated" id="input" type="text" readonly="readonly">
+        </div>
+        <div>
+            <div class="recipe animate__animated" id="recipe"></div>
+        </div>
+        <div class="addWindow" id="addWindow">
+            <form action="#" >
+                <div class="form">
+                    <div class="inputBox box">
+                        <input name="text" id="specialityName" placeholder="Введите название">
+                    </div>
+                    <div class="textareaBox box">
+                        <textarea name="text" id="specialityRecipe" placeholder="Введите ингридиенты"></textarea>
+                    </div>
+                    <div>
+                        <button class="addSpec" id="addPic">+ добавить картинку</button>
+                    </div>
+                    <button class="addSpec" id="addSpec">Добавить блюдо в список</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div class="gametitle">Поиграйте с котиком!!!</div>
+        <canvas id="game" width="600" height="600"></canvas>
+        <div class="instruction">
+            <button class="addSpec" id="endgame">Перестать играть</button>
+            <p>Стрелка вправо - движение вправо</p>
+            <p>Стрелка влево - движение влево</p>
+            <p>Стрелка вверх - запуск мячика</p>
+        </div>
+    </div>
+    <div class="catArea" id="catArea"></div>
+    <img class="cat animate__animated" id="cat" src="./img/cat.gif" alt="">
+    <div class="elem" id="elem">
+        <img dataspeed="190" class="layer vine animate__animated" id="vine" src="./img/vine.png">
+    </div>
+    <div class="elem elem2">
+        <img dataspeed="190" class="layer vine animate__animated" id="depMan" src="./img/depressionMan.png">
+    </div>
+</body>
+    <script src="js/main.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/cat.js"></script>
+    <script src="js/vine.js"></script>
+
+</html>
